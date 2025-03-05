@@ -23,4 +23,11 @@ export const Colors = {
     tabIconDefault: '#9BA1A6',
     tabIconSelected: tintColorDark,
   },
+  mainFontFamily: 'Roboto',
+  lightBorder:'#AFBACA',
+  borderLight: '#CED7DD',
+  textLight: '#9FA9B2',
+  textDark: '#484848',
+  bgCompelete: '#18CF6D4D',
+  textCompelete: '#0E8345'
 };

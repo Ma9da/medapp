@@ -1,52 +1,41 @@
-import { Colors } from '@/constants/Colors';
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-const OrderSummary = () => {
+    import { Colors } from "@/constants/Colors";
+    import React from "react";
+    import { View, Text, StyleSheet } from "react-native";
+    const OrderSummary = () => {
     return (
         <View style={styles.infoBox}>
-            <Text style={styles.title}>
-                Order Summary
-            </Text>
-            <View style={styles.productDetails}>
-                <Text style={styles.orderLightText}>
-                    Subtotal (3 Itmes)
-                </Text>
-                <Text style={styles.orderDarkText}>100 NIS</Text>
-            </View>
-            <View style={styles.productDetails}>
-                <Text style={styles.orderLightText}>
-                    Shipping Fee
-                </Text>
-                <Text style={styles.orderDarkText}>50 NIS</Text>
-            </View>
-            <View style={styles.productDetails}>
-                <Text
-                    style={styles.completedText}>
-                    Coupon
-                </Text>
-                <Text style={styles.compeletedValue}>
-                    -10 NIS
-                </Text>
-            </View>
-            <View style={styles.productDetails}>
-                <Text style={styles.orderLightText}>VAT</Text>
-                <Text style={styles.orderDarkText}>100 NIS</Text>
-            </View>
-            <View style={styles.hr}></View>
-            <View style={styles.productDetails}>
-                <Text style={styles.orderLightText}>Total</Text>
-                <Text style={styles.orderDarkText}>200 NIF</Text>
-            </View>
+        <Text style={styles.title}>Order Summary</Text>
+        <View style={styles.productDetails}>
+            <Text style={styles.orderLightText}>Subtotal (3 Itmes)</Text>
+            <Text style={styles.orderDarkText}>100 NIS</Text>
+        </View>
+        <View style={styles.productDetails}>
+            <Text style={styles.orderLightText}>Shipping Fee</Text>
+            <Text style={styles.orderDarkText}>50 NIS</Text>
+        </View>
+        <View style={styles.productDetails}>
+            <Text style={styles.completedText}>Coupon</Text>
+            <Text style={styles.compeletedValue}>-10 NIS</Text>
+        </View>
+        <View style={styles.productDetails}>
+            <Text style={styles.orderLightText}>VAT</Text>
+            <Text style={styles.orderDarkText}>100 NIS</Text>
+        </View>
+        <View style={styles.hr}></View>
+        <View style={styles.productDetails}>
+            <Text style={styles.orderLightText}>Total</Text>
+            <Text style={styles.orderDarkText}>200 NIF</Text>
+        </View>
         </View>
     );
-}
-const styles = StyleSheet.create({
+    };
+    const styles = StyleSheet.create({
     hr: {
         height: 1,
         backgroundColor: Colors.lightBorder,
-        marginBottom: 16
+        marginBottom: 16,
     },
-    title:{
+    title: {
         color: Colors.textDark,
         fontFamily: Colors.mainFontFamily,
         fontSize: 14,
@@ -64,7 +53,7 @@ const styles = StyleSheet.create({
         flexDirection: "column",
         width: "100%",
     },
-    compeletedValue:{
+    compeletedValue: {
         textAlign: "center",
         fontWeight: "600",
         color: Colors.textCompelete,
@@ -102,5 +91,5 @@ const styles = StyleSheet.create({
         justifyContent: "flex-start",
         alignItems: "flex-start",
     },
-});
-export default OrderSummary;
+    });
+    export default OrderSummary;
